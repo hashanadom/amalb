@@ -1,7 +1,8 @@
+/*
+this function, given a filename, prints the file's main func
+*/
 #define n 60
 #define string_to_search "main"
-
-
 
 
 void find_main(char *filename){
@@ -17,5 +18,6 @@ void find_main(char *filename){
   }
   
   flag? printf(str), while(!EOF) printf(fgets(str,n,fp)) : 0;
+  
   fclose(fp);
 }
