@@ -3,20 +3,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
-#define N 30
-	#ifndef _BOOLEAN 
-		#define _BOOLEAN
-		typedef enum {FALSE,TRUE} BOOLEAN;
-	#endif
+#define N 40
 	typedef struct 
 	{
 		void * arr[N];
-		int top;
-	}stack,*stackPtr;
-    void initStack(stackPtr s);
-	BOOLEAN isEmptyStack(stackPtr s);
-	BOOLEAN isFull(stackPtr s);
-	void * peek(stackPtr s);
-	void pushStack(stackPtr s,void * data);
-	void * popStack(stackPtr s);
+		int offset;
+	}stack,*sPtr;
+    void initStack(sPtr s);
+	int isEmptyStack(sPtr s);
+	int isFull(sPtr s);
+	void * peek(sPtr s);
+	void pushStack(sPtr s,void * data);
+	void * popStack(sPtr s);
 #endif
