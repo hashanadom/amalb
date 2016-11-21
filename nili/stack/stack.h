@@ -7,9 +7,9 @@ typedef struct{
 	int offset;
 	}stack,*sPtr;
     void initStack(sPtr s);
-	int isEmptyStack(sPtr s);
-	int isFull(sPtr s);
+	int isEmptyS(sPtr s);
+	int isFullS(sPtr s);
 	void * peek(sPtr s);
-	void pushStack(sPtr s,void * data);
-	void * popStack(sPtr s);
+	void pushS(sPtr s,void * data);
+	void * popS(sPtr s);
 #endif
